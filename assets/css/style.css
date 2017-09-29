@@ -1,0 +1,43 @@
+* {
+        box-sizing: border-box;
+}
+/* should be seen in every css file */
+
+body {
+    background-color: #F9F7E8;
+    color:#62BFAD;
+    font-family: Avenir;
+}
+
+h1 {
+    color: rgb(255, 139, 139);
+    font-size: 50px;
+    /* text-decoration: underline; */
+}
+
+.navibar {
+    background-color: rgb(255, 139, 139);
+    width: 400px;
+    border: 5px rgb(170, 149, 149) solid;
+    /* border is a actually shorthand of "border-width & border-style & border-color" */
+
+    padding: 30px;
+    /* padding is the area between your content and border */
+
+    margin-left: 30%;
+    /* margin is the area outside the border */
+}
+
+.navibar a {
+    color: #F9F7E8;
+    font-size: 20px;
+    font-family: Avenir-heavy;
+}
+
+.filter {
+
+}
+
+a {
+    text-decoration: none;
+}
