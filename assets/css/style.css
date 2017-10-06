@@ -1,43 +1,217 @@
-* {
+    * {
         box-sizing: border-box;
-}
-/* should be seen in every css file */
+    }
+    /* should be seen in every css file */
 
-body {
-    background-color: #F9F7E8;
-    color:#62BFAD;
-    font-family: Avenir;
-}
+    body {
+        background-color: #FAFAFA;
+        color: #515151;
+        font-family: "Open Sans";
+        border: 8px solid #62BFAD;
+        margin: 0;
+    }
 
-h1 {
-    color: rgb(255, 139, 139);
-    font-size: 50px;
-    /* text-decoration: underline; */
-}
+    .header_logo {
+        text-align: center;
+        height: 200px;
+        padding-top: 45px;
+    }
 
-.navibar {
-    background-color: rgb(255, 139, 139);
-    width: 400px;
-    border: 5px rgb(170, 149, 149) solid;
-    /* border is a actually shorthand of "border-width & border-style & border-color" */
+    .navibar {
+        text-align: center;
+        margin: auto;
+        /* width: 400px; */
+        border-width: 1px 0 0;
+        border-color: #e9e9e9;
+        border-style: solid;
+        /* border is a actually shorthand of "border-width & border-style & border-color" */
+        padding: 25px;
+        /* padding is the area between your content and border */
+        /* margin-left: 30%; */
+        /* margin is the area outside the border */
+        width: 1000px;
+    }
 
-    padding: 30px;
-    /* padding is the area between your content and border */
+    .navibar a {
+        color: #515151;
+        font-size: 11px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        text-align: center;
+        font-weight: 400;
+        font-style: normal;
+        padding: 2px 10px 1px;
+        margin: 0 8px 0;
+    }
 
-    margin-left: 30%;
-    /* margin is the area outside the border */
-}
+    .navibar a:hover {
+        /* font-size: 13px; */
+        color: #B1B1B1;
+        font-weight: 400;
+    }
+    /* .actnavi {
+        color: #B1B1B1;
+    } */
 
-.navibar a {
-    color: #F9F7E8;
-    font-size: 20px;
-    font-family: Avenir-heavy;
-}
+    .landing {
+        margin: auto;
+        width: 1000px;
+        height: 500px;
+        background-color: #f9f7e8;
+    }
 
-.filter {
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
 
-}
+    #lading_text {
+        text-align: center;
+        padding-top: 160px;
+        font-size: 32px;
+        line-height: 50px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: 100;
+        /* font-style: normal; */
+    }
 
-a {
-    text-decoration: none;
-}
+    #mouse {
+        text-align: center;
+        padding-top: 160px;
+    }
+
+    .filter {
+        text-align: center;
+        color: #515151;
+        font-size: 11px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: 100;
+        padding: 50px 0 30px 0;
+        margin: 30px 0 0 0;
+    }
+
+    .projects {
+        text-align: center;
+        margin: auto;
+        width: 950px;
+    }
+
+    .projects button {
+        text-align: center;
+        margin: 20px;
+        border: none;
+        padding: 0;
+        width: 400px;
+        height: 400px;
+        cursor: pointer;
+        background-color: #F3F3F3;
+    }
+
+    .projects button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.11), 0 17px 50px 0 rgba(0, 0, 0, 0.11);
+        /* opacity: 0.5; */
+    }
+    /* .project-tile {
+        width: 900px;
+        height: 600px;
+
+    } */
+
+    .project_body {
+        text-align: center;
+        margin: auto;
+        width: 1000px;
+    }
+
+    #profile {
+        text-align: center;
+        margin: auto;
+        width: 1000px;
+    }
+
+    .profile_body {
+        text-align: left;
+        margin: auto;
+        padding: 100px 0;
+        width: 600px;
+    }
+
+    .title {
+        text-align: left;
+        margin: auto;
+        font-size: 12px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        color: #515151;
+    }
+
+    .paragraph {
+        text-align: left;
+        margin: auto;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        color: #515151;
+    }
+
+    #resume {
+        text-align: center;
+        margin: 0 0 60px 0;
+        width: 150px;
+        height: 60px;
+        cursor: pointer;
+        padding: 8px 10px;
+        font-size: 18px;
+        outline: none;
+        color: #fff;
+        background-color: #62BFAD;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 7px #999;
+    }
+
+    #resume:hover {
+        background-color: #4FA391;
+    }
+
+    #resume:active {
+        background-color: #62BFAD;
+        box-shadow: 0 5px #797979;
+        transform: translateY(4px);
+    }
+
+    .resume_body {
+        text-align: left;
+        margin: auto;
+        padding: 100px 0;
+        width: 1000px;
+        border-width: 1px 0 0;
+        border-color: #e9e9e9;
+        border-style: solid;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px 0 30px;
+        margin: auto;
+        width: 1000px;
+        border-width: 1px 0 1px;
+        border-color: #e9e9e9;
+        border-style: solid;
+        color: #343434;
+        font-size: 10px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    /* margin auto???? */

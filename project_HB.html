@@ -1,41 +1,47 @@
 <html>
 <head>
-    <title>Shuyi in ID - Experience Design</title>
-    <link rel="shortcut icon" href="shuyi_logo.png">
+    <meta charset="UTF-8">
+    <title>Shuyi at ID - Experience Design</title>
+    <link rel="shortcut icon" href="assets/img/shuyi_logo1.png">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="header_logo">
-        <image src="big_logo.png" alt="SHUYI's LOGO"></image>
+        <image src="assets/img/header_logo1.png" alt="SHUYI's LOGO" onmouseover="rollover(this)" onmouseout="mouseaway(this)"></image>
     </div>
-    <br/>
-    <hr/>
-    <br/>
 
     <div class="navibar">
-        <nav class="menu">
-            <a href="index.html">Home</a>
-            <a>Work</a>
-            <a href="profile.html">Profile</a>
-            <a href="resume.html">Resume</a>
-        </nav>
+        <a class="actnavi" href="index.html">Home</a>
+        <a id="work">Work +</a>
+        <a href="profile.html">Profile</a>
+        <a href="resume.html">Resume</a>
     </div>
 
-    <br/>
-    <br/>
-
-    <div class="landing_image">
-        <image src="landing_HB.png" alt="landing_hb"></image>
-    </div>
-
-    <div class="HB_body">
-        <image src="overview_HB.png" alt="HB"></image>
+    <div class="project_body">
+        <image src="assets/img/hb1.jpg" alt="HB"></image>
+        <image src="assets/img/hb2.jpg" alt="HB"></image>
+        <!-- <image src="assets/img/hb3.jpg" alt="HB"></image>
+        <image src="assets/img/hb4.jpg" alt="HB"></image>
+        <image src="assets/img/hb5.jpg" alt="HB"></image> -->
     </div>
 
     <footer>
-        <p>©Copyright 2017 by Shuyi. All rights reversed.</p>
+        <p>Copyright © 2017 Shuyi.</p>
     </footer>
 </body>
+
+<script type="text/javascript">
+    function rollover(logo_image) {
+
+        logo_image.src = 'assets/img/header_logo2.png';
+    }
+
+    function mouseaway(logo_image) {
+
+        logo_image.src = "assets/img/header_logo1.png";
+    }
+
+</script>
 
 </html>

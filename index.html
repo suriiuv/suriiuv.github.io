@@ -2,41 +2,142 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Shuyi in ID - Experience Design</title>
-    <link rel="shortcut icon" href="shuyi_logo.png">
+    <title>Shuyi at ID - Experience Design</title>
+    <link rel="shortcut icon" href="assets/img/shuyi_logo1.png">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <h1>Shuyi meow!</h1>
     <div class="header_logo">
-        <image src="big_logo.png" alt="SHUYI's LOGO"></image>
+        <image src="assets/img/header_logo1.png" alt="SHUYI's LOGO" onmouseover="rollover(this)" onmouseout="mouseaway(this)"></image>
     </div>
+
+    <!-- <div class="navibar">
+
+        <a class="active_navi" href="index.html">HOME</a>
+
+
+        <ul class="folder-child">
+
+            <li><a aria-haspopup="true">WORK +</a>
+
+                <ul>
+                    <li class="">
+                        <a href="/how'sbeetles.html">How's Beetles</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/livingstrong.html">Living Strong</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/languagearchive.html">CoRSAL</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/pigeonvoyaguer.html">Pigeon Voyageur</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/datajewelry.html">Data Jewelry</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/forest.html"> A Girl in A Forest</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <a href="profile.html">PROFILE</a>
+        <a href="resume.html">RESUME</a>
+    </div> -->
+
 
     <div class="navibar">
-            <a href="index.html">Home</a>
-            <a>Work</a>
-            <a href="profile.html">Profile</a>
-            <a href="resume.html">Resume</a>
+        <a class="actnavi" href="index.html">Home</a>
+        <a id="work">Work +</a>
+        <a href="profile.html">Profile</a>
+        <a href="resume.html">Resume</a>
     </div>
 
-    <div class="landing_image">
-        <image src="love_design.png" alt="SLOGEN"></image>
+    <div class="landing">
+        <div id="lading_text">
+            DESIGN IS SO SIMPLE, <br/> THAT IS WHY IT IS SO COMPLICATED.
+        </div>
+
+        <div id="mouse">
+            <image src="assets/img/arrow.png" alt="scroll down"></image>
+        </div>
+
     </div>
 
     <div class="filter">
-        <p><em>App Design · Web Design · Service Design · Research</em></p>
+        <a>App Design</a> · Web Design · Service Design · Research
     </div>
 
     <div class="projects">
-        <a href="project_HB.html"><image src="P_HB.png" alt="HB"></image></a>
-        <a href="project_COPD.html"><image src="P_COPD.png" alt="COPD"></image></a>
+        <!-- <div class="project-tile">
+            <button type="button" href="project_hb.html">
+                <image src="P_HB.png" alt="HB"></image>
+            </button>
+            <h1>How's Beetles.</h1>
+            <p>Service | App</p>
+
+            <button type="button" href="project_copd.html">
+                <image src="P_COPD.png" alt="COPD"></image>
+            </button>
+            <h1>How's Beetles.</h1>
+            <p>Service | App</p>
+        </div> -->
+
+
+        <!-- <a class="button" href="#">Button</a> -->
+        <button type="button">
+            <a href="project_hb.html"><image src="assets/img/P_HB.png" alt="HB"></image></a>
+        </button>
+
+        <button type="button">
+            <a href="project_copd.html"><image src="assets/img/P_COPD.png" alt="COPD"></image></a>
+        </button>
+
+        <button type="button" href="project_corsal.html">
+            <image src="assets/img/P_corsal.png" alt="corsal"></image>
+        </button>
+
+        <button type="button" href="project_datajewelrt.html">
+            <image src="assets/img/P_jewelry.png" alt="jewelry"></image>
+        </button>
+
+        <button type="button" href="project_pv.html">
+            <image src="assets/img/P_pigeon.png" alt="pv"></image>
+        </button>
+
+        <button type="button" href="project_forest.html">
+            <image src="assets/img/P_forest.png" alt="forest"></image>
+        </button>
 
     </div>
 
+
     <footer>
-        <p>©Copyright 2017 by Shuyi. All rights reversed.</p>
+        ©Copyright 2017 by Shuyi.
+
     </footer>
 </body>
 
 </html>
+
+
+<script type="text/javascript">
+    function rollover(logo_image) {
+
+        logo_image.src = 'assets/img/header_logo2.png';
+    }
+
+    function mouseaway(logo_image) {
+
+        logo_image.src = "assets/img/header_logo1.png";
+    }
+</script>

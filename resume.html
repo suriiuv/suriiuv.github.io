@@ -1,31 +1,29 @@
 <html>
 <head>
-    <title>Shuyi in ID - Experience Design</title>
-    <link rel="shortcut icon" href="shuyi_logo.png">
+    <title>Shuyi at ID - Experience Design</title>
+    <link rel="shortcut icon" href="assets/img/shuyi_logo1.png">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="header_logo">
-        <image src="big_logo.png" alt="SHUYI's LOGO"></image>
+        <image src="assets/img/header_logo1.png" alt="SHUYI's LOGO" onmouseover="rollover(this)" onmouseout="mouseaway(this)"></image>
     </div>
-    <br/>
-    <hr/>
-    <br/>
 
     <div class="navibar">
-        <nav class="menu">
-            <a href="index.html">Home</a>
-            <a>Work</a>
-            <a href="profile.html">Profile</a>
-            <a href="resume.html">Resume</a>
-        </nav>
+        <a href="index.html">Home</a>
+        <a id="work">Work +</a>
+        <a href="profile.html">Profile</a>
+        <a class="actnavi" href="resume.html">Resume</a>
     </div>
 
-    <br/>
-    <br/>
+    <div class="resume_body">
 
-    <div class="redume_body">
+        <button id="resume" type="button">
+        Download PDF
+        <a href="assets/img/shuyi_resume.pdf"></a>
+        </button>
+
         <h1>Shuyi Liu</h1>
 
         <h3>Profile</h3>
@@ -54,8 +52,20 @@
     </div>
 
     <footer>
-        <p>©Copyright 2017 by Shuyi. All rights reversed.</p>
+        <p>Copyright © 2017 Shuyi.</p>
     </footer>
+
+    <script type="text/javascript">
+        function rollover(logo_image) {
+
+            logo_image.src = 'assets/img/header_logo2.png';
+        }
+
+        function mouseaway(logo_image) {
+
+            logo_image.src = "assets/img/header_logo1.png";
+        }
+    </script>
 </body>
 
 </html>
